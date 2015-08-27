@@ -25,3 +25,9 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 - ในหนังสือเล่มนี้ ตัวแปรจะใช้ `camelCase` ชื่อไฟล์จะใช้ `my_file.js` และ css จะใช้ `.my-class`
 - Meteor จะโหลดและ minify css ให้เราเอง
 - ไฟล์ css จะเก็บไว้ที่ `/client/stylesheets` ไม่เหมือนไฟล์ assets อื่นๆ ที่จะอยู่ใน `/public`
+
+### 2.5 Deploying
+
+- deploy ด้วยคำสั่ง `meteor deploy myapp.meteor.com`
+- ติดตั้ง MeteorUp `npm install -g mup`
+- คำสั่งสำหรับ MeteorUp `mup init`, `mup setup` และ `mup deploy`
