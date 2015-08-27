@@ -35,3 +35,13 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 - `{{#each}} .. {{/each}}` เรียกว่า block helpers
 - ใช้การตั้งชื่อไฟล์เหมือนกับ template เป็น helper แต่เปลี่ยน extensions เป็น `.js` เพื่อเอาไว้เขียน logic (ไม่มี Controller)
 - `Template.postsList.helpers()` เป็น template helper ซึ่ง return ค่า `posts` จาก array ที่สร้างไว้
+
+### 4. Collections
+
+- Collection คือ mongoDB ที่จะ sync ข้อมูล real time ระหว่าง server กับ client.
+- scope ของ `var` ใน Meteor จะ limit แค่ภายในไฟล์เดียวกัน ฉะนั้นจึงใช้ global variable เพื่อให้ `Posts` ใช้ได้ตั้ง app
+- การเก็บข้อมูลมี 3 แบบ
+    - browser memory : เก็บเหมือนตัวแปร js จะหายไปเมื่อปิด browser
+    - browser's storage : เก็บข้อมูลลง localStorage หรือ cookie แชร์ข้อมูลระหว่าง tab ได้
+    - server database : MongoDB
+- รัน Shell ด้วยคำสั่ง `meteor shell`
