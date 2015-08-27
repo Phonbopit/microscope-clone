@@ -45,3 +45,7 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
     - browser's storage : เก็บข้อมูลลง localStorage หรือ cookie แชร์ข้อมูลระหว่าง tab ได้
     - server database : MongoDB
 - รัน Shell ด้วยคำสั่ง `meteor shell`
+- รัน mini mongo ผ่าน meteor ด้วย `meteor mongo`
+- ปัญหา รัน `meteor mongo` ไม่ผ่าน เกิด error หา local db ไม่เจอ เพราะว่าไม่ได้ รัน meteor ก่อน (ต้องให้ app running ก่อน)
+- `meteor remove autopublish` เพื่อไม่ให้สามารถ access ข้อมูลผ่าน Console ได้
+- `publish()` เอาไว้กำหนดว่าจะให้ client เห็นอะไรบ้าง โดยฝั่ง client ต้อง  `subscribe()` flag เดียวกัน
