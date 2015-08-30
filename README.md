@@ -54,4 +54,14 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 
 - ใช้ package `iron:router` สำหรับ Routing และ URLs mapping.
 - `iron:router` มี layout template คล้ายๆ Ruby on Rails นั่นก็คือ `{{> yield}}`
-- `Routes` คือ 
+-  ตั้งค่า layoutTemplate ด้วย
+
+    ```
+    Router.configure({ layoutTemplate: 'layoutName' });
+    ```
+- ตามที่บทที่ 2 โฟลเดอร์​ `lib` จะถูกโหลดก่อนเป็นอันดับแรก ดังนั้นจึงใส่โค๊ดเกี่ยวกับ helper ไว้ที่นี่ 
+- `iron:router` คอนเซปคล้ายๆกับ router ของ express.js การกำหนด route และกำหนด template ประมาณนี้
+
+    ```
+    Router.route('/', { name: 'postsList' });
+    ```
