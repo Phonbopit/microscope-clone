@@ -49,3 +49,19 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 - ปัญหา รัน `meteor mongo` ไม่ผ่าน เกิด error หา local db ไม่เจอ เพราะว่าไม่ได้ รัน meteor ก่อน (ต้องให้ app running ก่อน)
 - `meteor remove autopublish` เพื่อไม่ให้สามารถ access ข้อมูลผ่าน Console ได้
 - `publish()` เอาไว้กำหนดว่าจะให้ client เห็นอะไรบ้าง โดยฝั่ง client ต้อง  `subscribe()` flag เดียวกัน
+
+### 5. Routing
+
+- ใช้ package `iron:router` สำหรับ Routing และ URLs mapping.
+- `iron:router` มี layout template คล้ายๆ Ruby on Rails นั่นก็คือ `{{> yield}}`
+-  ตั้งค่า layoutTemplate ด้วย
+
+    ```
+    Router.configure({ layoutTemplate: 'layoutName' });
+    ```
+- ตามที่บทที่ 2 โฟลเดอร์​ `lib` จะถูกโหลดก่อนเป็นอันดับแรก ดังนั้นจึงใส่โค๊ดเกี่ยวกับ helper ไว้ที่นี่ 
+- `iron:router` คอนเซปคล้ายๆกับ router ของ express.js การกำหนด route และกำหนด template ประมาณนี้
+
+    ```
+    Router.route('/', { name: 'postsList' });
+    ```
