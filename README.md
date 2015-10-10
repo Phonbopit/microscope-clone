@@ -80,3 +80,7 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 
 - ดูข้อมูล users จาก browser ด้วยคำสั่ง `Meteor.users`
 - ดูข้อมูล users ผ่าน mongo shell ด้วยคำสั่ง `db.users`
+
+### 7. Creating Posts
+
+- `Router.go()` เอาไว้ให้ browser browse ไปที่ url ที่เรากำหนด
