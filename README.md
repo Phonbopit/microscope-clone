@@ -70,3 +70,13 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 
 - package ที่ใช้ใน chapter นี้คือ `ian:accounts-ui-bootstrap-3` และ `accouts-password'
 - มี helper template คือ `{{> loginButtons}}` สำหรับการล็อคอิน
+- ปรับให้ login system ใช้ username อย่างเดียว
+
+    ```
+    Accounts.ui.config({
+        passwordSignupFields: 'USERNAME_ONLY'
+    });
+    ```
+
+- ดูข้อมูล users จาก browser ด้วยคำสั่ง `Meteor.users`
+- ดูข้อมูล users ผ่าน mongo shell ด้วยคำสั่ง `db.users`
