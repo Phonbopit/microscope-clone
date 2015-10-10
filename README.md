@@ -65,3 +65,8 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
     ```
     Router.route('/', { name: 'postsList' });
     ```
+
+### 6. Adding Users
+
+- package ที่ใช้ใน chapter นี้คือ `ian:accounts-ui-bootstrap-3` และ `accouts-password'
+- มี helper template คือ `{{> loginButtons}}` สำหรับการล็อคอิน
