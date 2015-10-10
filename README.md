@@ -84,3 +84,14 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 ### 7. Creating Posts
 
 - `Router.go()` เอาไว้ให้ browser browse ไปที่ url ที่เรากำหนด
+- submit post ใช้ jQuery เข้ามาช่วย เช่นใน `client/templates/posts/post_submit.js`
+
+    ```
+    $(e.target).find('[name=url]').val()
+    ```
+
+- ใช้ [audit-arguments-checks](http://docs.meteor.com/#/full/auditargumentchecks) เพื่อเช็ค JavaScript Object
+
+- `Meteor.methods()` เมธอดที่เอาไว้รันคำสั่งในส่วนของ Server
+
+### 8. Editing Posts
