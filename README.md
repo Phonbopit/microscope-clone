@@ -95,3 +95,5 @@ Credit : [Discover Meteor Book](http://discovermeteor.com)
 - `Meteor.methods()` เมธอดที่เอาไว้รันคำสั่งในส่วนของ Server
 
 ### 8. Editing Posts
+
+- `Collection.update()` ใช้ [$set](http://docs.mongodb.org/manual/reference/operator/update/set/) เพื่ออัพเดทเฉพาะ key ที่เราต้องการ
